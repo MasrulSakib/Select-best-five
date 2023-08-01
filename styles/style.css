@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@1,300&display=swap');
+
+.font-top {
+    font-family: 'Marck Script', cursive;
+}
+
+.para-text {
+    font-family: 'Merienda', cursive;
+}
+
+.img-shape {
+    width: 264px;
+    height: 204px;
+}
+
+.btn-select {
+    margin-top: 20px;
+    width: 221px;
+    height: 42px;
+    border: 2px;
+    border-radius: 4px;
+}
+
+.card-body {
+    width: 264px;
+    height: 400px;
+}
+
+.span-body {
+    width: 264px;
+    height: 600px;
+}
