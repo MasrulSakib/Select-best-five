@@ -56,3 +56,34 @@ function sidePanalCal(events) {
 }
 
 
+
+function totalPowerLvl() {
+
+    const captainsField = document.getElementById('captain-pwr');
+    const captainPowerStr = captainsField.value;
+    const captainPower = parseFloat(captainPowerStr);
+
+    const managerField = document.getElementById('manager-pwr');
+    const managerPowerStr = managerField.value;
+    const managerPower = parseFloat(managerPowerStr);
+
+    if (isNaN(captainPower) && isNaN(managerPower)) {
+
+        alert('Please input currect type of number')
+        managerField.value = '';
+        captainsField.value = '';
+    }
+
+    else {
+
+
+        const totalPower = document.getElementById('total-power');
+        const totalPowerTextStr = totalPower.innerText;
+        const totalPowerText = parseFloat(totalPowerTextStr);
+
+        const grandTotalCalculation = captainPower + managerPower + totalPowerText;
+
+        const totalText = document.getElementById('total-text');
+        totalText.innerText = grandTotalCalculation;
+    }
+}
